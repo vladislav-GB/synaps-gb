@@ -1,14 +1,11 @@
-#components.py
+#content.py
 
-from dash import html
+import streamlit as st
 
-def Content():
-
-    return html.Div(
-        [
-           
-        ],
-        className="content"
-    )
-
-
+def content():
+    st.title("EEG Signal Analysis")
+    st.caption(f"Current section: {st.session_state.get('active_page', 'Dashboard')}")
+    st.divider()
+    
+    # Заглушка под график
+    st.info("Plotly Graph Area will be displayed here.")

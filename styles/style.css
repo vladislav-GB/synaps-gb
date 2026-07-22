@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.logo{
+
+    font-size:40px;
+    
+    font-weight:800;
+
+    color:#1E293B;
+
+    margin-bottom:2px;
+
+    text-align: center;
+}
+
+.subtitle{
+
+    color:#64748B;
+
+    font-size:20px;
+
+    margin-top:-20px;
+
+    margin-bottom:20px;
+
+    text-align: center;
+}
+
+.divider{
+
+    height:1px;
+
+    background:rgba(30,41,59,.08);
+
+    margin-top:-20px;
+
+    width:100%;
+}
+
+.stApp {
+    background-color: #f7f9fc;
+
+    background-image:
+        radial-gradient(circle at 2% 42%,
+            rgba(255, 203, 143, 0.32) 0%,
+            transparent 20%),
+        
+        radial-gradient(circle at 80% 75%,
+            rgba(255, 203, 143, 0.32) 0%,
+            transparent 23%),
+
+        radial-gradient(circle at 30% 95%,
+            rgba(143, 210, 255, 0.32) 0%,
+            transparent 20%),
+            
+        radial-gradient(circle at 60% 2%,
+            rgba(143, 210, 255, 0.32) 0%,
+            transparent 20%),
+            
+        radial-gradient(circle at 95% 20%,
+            rgba(209, 199, 189, 0.32) 0%,
+            transparent 20%),
+
+        radial-gradient(circle at 20% 5%,
+            rgba(209, 199, 189, 0.32) 0%,
+            transparent 20%);
+}
+
+
+div[data-testid="stColumn"]{
+
+    background:rgba(255,255,255, 0.30);
+
+    border:1px solid rgba(255,255,255, 0.80);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(25px);
+
+    box-shadow:
+        0 12px 40px rgba(15,23,42, 0.06);
+
+    padding:24px;
+}
+
+div.stButton > button {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: transparent;
+
+    color: #475569;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+    padding: 14px 18px;
+
+    transition: 0.2s;
+}
+
+div.stButton > button:hover{
+
+    background: rgba(255,255,255, 0.45);
+
+    transform: translateY(-2px) scale(1.05);
+
+    color:#1E293B;
+}
+
+div.stButton > button:focus{
+
+    background:white;
+
+    box-shadow:0 4px 16px rgba(0,0,0, 0.05);
+}
+
+

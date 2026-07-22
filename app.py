@@ -1,11 +1,26 @@
 #app.py
 
-from dash import Dash
-from base import start_project
+import streamlit as st
+from components.sidebar import sidebar
+from components.content import content
+from components.statistic_panel import statistic_panel
 
-app = Dash(__name__, title="SYNAPS")
 
-app.layout = start_project()
+st.set_page_config(page_title="SYNAPS", layout="wide")
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
+with open('styles/style.css', encoding='utf-8') as f:
+    st.markdown(f'<style>{f.read()}</styles>', unsafe_allow_html=True)
+
+
+left_col, center_col, right_col = st.columns([1, 5, 1], gap="medium", border=True)
+
+
+with left_col:
+    sidebar()
+
+#with center_col:
+    #content()
+
+#with right_col:
+    #statistic_panel()
