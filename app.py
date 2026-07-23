@@ -13,11 +13,12 @@ with open('styles/style.css', encoding='utf-8') as f:
     st.markdown(f'<style>{f.read()}</styles>', unsafe_allow_html=True)
 
 
-left_col, center_col, right_col = st.columns([1, 5, 1], gap="medium", border=True)
+left_col, center_col, right_col = st.columns([1, 5, 1.5], gap="medium", border=True)
 
 
 with left_col:
     sidebar()
+
 
 #with center_col:
     #content()

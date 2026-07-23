@@ -18,7 +18,33 @@ def sidebar():
         unsafe_allow_html=True
     )
 
-    st.button("Preprocessing")
-    st.button("Training")
-    st.button("Testing")
-    st.button("Settings")
+
+    st.button("Dashboard", width="stretch",
+            icon=":material/dashboard:")
+    
+    st.button("Preprocessing", width="stretch",
+            icon=":material/monitoring:")
+    
+    st.button("Training", width="stretch",
+        icon=":material/mediation:")
+    
+    st.button("Testing", width="stretch",
+            icon=":material/analytics:")
+    
+    st.button("Experiments", width="stretch",
+            icon=":material/assignment:")
+    
+    st.button("Settings", width="stretch",
+            icon=":material/settings:")
+
+    with st.container(border=True):
+
+        st.markdown("""
+            <div class="title-project">CURRENT PROJECT</div>
+            """, unsafe_allow_html=True)
+
+        st.write("*Model:*")
+        st.caption("EEGNeX v5")
+
+        st.write("*Dataset:*")
+        st.caption("Neonatal EEG")

@@ -8,7 +8,7 @@
 
 .logo{
 
-    font-size:40px;
+    font-size:36px;
     
     font-weight:800;
 
@@ -23,9 +23,20 @@
 
     color:#64748B;
 
-    font-size:20px;
+    font-size:18px;
 
     margin-top:-20px;
+
+    margin-bottom:20px;
+
+    text-align: center;
+}
+
+.title-project{
+
+    color:#64748B;
+
+    font-size:12px;
 
     margin-bottom:20px;
 
@@ -36,11 +47,11 @@
 
     height:1px;
 
-    background:rgba(30,41,59,.08);
+    background:rgba(65, 66, 70, 0.301);
 
     margin-top:-20px;
 
-    width:100%;
+    width:96%;
 }
 
 .stApp {
@@ -128,5 +139,6 @@ div.stButton > button:focus{
 
     box-shadow:0 4px 16px rgba(0,0,0, 0.05);
 }
+
 
 
